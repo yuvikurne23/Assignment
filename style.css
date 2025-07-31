@@ -27,6 +27,19 @@ nav {
   height: 28px;
 }
 
+.ul-list ul li a{
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.ul-list ul li a:hover {
+  color: #0056d6;
+  text-decoration: underline;
+}
+
 .ul-list ul {
   display: flex;
   list-style: none;
