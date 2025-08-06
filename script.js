@@ -1,18 +1,23 @@
-    const headers = document.querySelectorAll('.accordion-header');
+const headers = document.querySelectorAll(".accordion-header");
 
-    headers.forEach(header => {
-      header.addEventListener('click', () => {
-        const item = header.parentElement;
-        const icon = header.querySelector('.accordion-icon');
+headers.forEach((header) => {
+  header.addEventListener("click", () => {
+    const item = header.parentElement;
+    const icon = header.querySelector(".accordion-icon");
 
-        item.classList.toggle('active');
-        header.classList.toggle('active');
+    item.classList.toggle("active");
+    header.classList.toggle("active");
 
-        // Toggle +/-
-        if (item.classList.contains('active')) {
-          icon.textContent = '-';
-        } else {
-          icon.textContent = '+';
-        }
-      });
-    });
+    // Toggle +/-
+    if (item.classList.contains("active")) {
+      icon.textContent = "-";
+    } else {
+      icon.textContent = "+";
+    }
+  });
+});
+
+function toggleMenu() {
+  const navList = document.getElementById("navList");
+  navList.classList.toggle("active");
+}
